@@ -1,9 +1,9 @@
 # How to test
 Install maven first.
-> git clone https://github.com/miaht94/Testing.git
+> git clone https://github.com/miaht94/JUnit-Testing.git
 >
 > cd Testing
 >
 > mvn install
 >
-> mvn surefire:test -Dtest=GCDTesting
+> mvn test -Dmaven.test.failure.ignore=true
