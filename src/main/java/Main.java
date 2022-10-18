@@ -4,20 +4,22 @@ public class Main {
             return -1;
         if (x == y && x != 1)
             return 0;
-        int r=0, a, b;
+        int r = 0, a, b;
         a = Math.max(x, y); // a is greater number
         b = Math.min(x, y); // b is smaller number
         r = b;
-        while(a % b != 0)
-        {
+        while (a % b != 0) {
             r = a % b;
             a = b;
             b = r;
         }
-        return r == 1 ? 1 : 0;
+        if (r == 1)
+            return 1;
+        else
+            return 0;
     }
     public static void main(String[] args) {
         Main main = new Main();
-        System.out.printf("" + main.gcd(13,26));
+        System.out.printf(""+10%0);
     }
 }
