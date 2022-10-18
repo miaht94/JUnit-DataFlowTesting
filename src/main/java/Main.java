@@ -4,10 +4,9 @@ public class Main {
             return -1;
         if (x == y && x != 1)
             return 0;
-        int r = 0, a, b;
-        a = Math.max(x, y); // a is greater number
-        b = Math.min(x, y); // b is smaller number
-        r = b;
+        int a = Math.max(x, y); // a is greater number
+        int b = Math.min(x, y); // b is smaller number
+        int r = b;
         while (a % b != 0) {
             r = a % b;
             a = b;
